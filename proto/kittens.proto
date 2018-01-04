@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package kittens;
+
+service KittensCRUD {
+    rpc Create(Kitten) returns (KittenResponse);
+    rpc ReadAll(Empty) returns (KittensResponse);
+    rpc ReadOne(IdQuery) returns (KittenResponse);
+    rpc Update(Kitten) returns (KittenResponse);
+    rpc Delete(IdQuery) returns (KittenResponse);
+}
+
+message Empty {}
+
+message KittenResponse {
+    Kitten data = 1;
+    Error error = 2;
+}
+
+message KittensResponse {
+    repeated Kitten data = 1;
+    Error error = 2;
+}
+
+message Kitten {
+    string id = 1;
+    string name = 2;
+    int32 age = 3;
+    string color = 4;
+    repeated Toy toys = 5;
+
+    message Toy {
+        string description = 1;
+    }
+}
+
+message IdQuery {
+    string id = 1;
+}
+
+message Error {
+    string message = 2;
+}
