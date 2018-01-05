@@ -21,11 +21,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-plugin-function-composition": "^0.2.1",
-    "babel-plugin-holes": "^0.2.0",
-    "babel-plugin-implicit-function": "^0.1.1",
-    "babel-plugin-pipe-operator-curry": "^1.0.2",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-rung": "1.1.2",
     "chai": "^4.1.2",
     "eslint": "^4.14.0",
     "eslint-config-rung": "^2.1.0",
