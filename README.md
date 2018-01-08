@@ -38,3 +38,10 @@ to achieve the goals above, let's see how:
 The text above is **mostly** opinionated and this example is not meant to be an
 silver bullet for everything. If some of this doesn't work for you, open an
 issue! Maybe we both can improve our knowledge :)
+
+## Checklist
+- [x] `.proto` definitions
+- [x] Initial CRUD
+- [ ] Tests
+- [x] Docker
+- [ ] Travis CI
